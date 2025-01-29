@@ -9,6 +9,7 @@ import Contact from './Pages/Contact';
 import Nopage from './Pages/Nopage';
 import Product from './Pages/Product';
 import Footer from './components/Footer';
+import Getoffer from './Pages/Getoffer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/products" element={< Product/>} />
+      <Route path='/getoffer' element={<Getoffer/>}></Route>
       <Route path="*" element={<Nopage />} />
       
     </Routes>
