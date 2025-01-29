@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(6, 34, 165);
+    flex-direction: column;
+  }
+  .footer-divs {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-copyright {
+    font-family: Arial, sans-serif; /* Font ailesi */
+    font-size: 18px; /* Font boyutu */
+    color: #ebe3e3; /* Metin rengi */
+    text-align: center; /* Metnin ortalanması */
+    padding: 10px 0;
+  }
+  
+  .footer-copyright a {
+    color: #ebe3e3; /* Metin rengi */
+    text-decoration: none; /* Alt çizgi kaldırma */
+    transition: color 0.3s ease; /* Geçiş efekti */
+  }
+  .footer-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-div1,
+  .footer-div2,
+  .footer-div3 {
+    font-size: 1.5rem;
+    padding: 0 40px;
+    min-width: 300px;
+    display: flex;
+    max-width: 350px;
+    align-items: center;
+   
+    flex-direction: column;
+  }
+  .logo-div {
+    width: 100%;
+    height: 40%;
+    background-size: contain;
+    background-position: center;
+     margin: 0 20px;
+    background-repeat: no-repeat;
+    max-width: 230px;
+  }
+  .logo-text {
+    font-size: 1rem;
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px 0;
+    line-height: 2;
+  
+  }
+  .mail-div {
+    margin-top: 25px;
+  
+    display: flex;
+    align-items: center;
+  }
+  .mail-div a {
+    color: #ebe3e3;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: font-size 0.3s ease;
+  }
+  
+  .contact span {
+    font-size: 1.5rem;
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+  }
+  .contact-div {
+    display: flex;
+    overflow: hidden;
+   flex-direction: column;
+  }
+  .contact-icon{
+    display: flex;
+    flex-direction: row;
+  
+    
+    margin: 40px 0;
+  }
+  
+  .mail-div a:hover {
+     color: rgb(252, 176, 64);
+   
+     font-size: 0.98rem;
+  
+  }
+  
+  .contact-div ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    padding: 0;
+  }
+  .contact-div li {
+    margin: 10px 0;
+  
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .contact-div li:hover {
+    
+  
+    color: rgb(252, 176, 64);
+    
+  }
+  
+  
+  .contact-div li a {
+    color: #ebe3e3;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+    margin-left: 8px;
+  
+  }
+  .contact-div li a:hover {
+    color: rgb(252, 176, 64);
+    font-size: 0.98rem;
+  }

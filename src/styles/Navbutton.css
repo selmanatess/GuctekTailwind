@@ -1,0 +1,66 @@
+
+
+.app-button {
+    position: relative;
+    display: flex;
+   
+    border-radius: 5px;
+    background: transparent;
+    font-family:'arial', sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    margin: 0px 5px;
+    min-width: 60;
+  }
+  
+  .app-button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: rgb(252, 176, 64);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  .app-button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  .app-button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .app-button:hover span {
+    color: #fff;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
