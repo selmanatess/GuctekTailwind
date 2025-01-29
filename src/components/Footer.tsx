@@ -29,7 +29,7 @@ export default function Footer() {
         <li className='flex flex-row'><div className='flex item center w-24'><HiChevronDoubleRight></HiChevronDoubleRight><a href="#" className="hover:underline">Hakkımızda</a></div></li>
         <li className='flex flex-row'><HiChevronDoubleRight></HiChevronDoubleRight><a href="#" className="hover:underline">Hizmetlerimiz</a></li>
         <li className='flex flex-row'><HiChevronDoubleRight></HiChevronDoubleRight><a href="#" className="hover:underline">Ürünler</a></li>
-        <li><HiChevronDoubleRight></HiChevronDoubleRight><a href="#" className="hover:underline">Teklif Al</a></li>
+        <li><HiChevronDoubleRight></HiChevronDoubleRight><a href="/getoffer" className="hover:underline">Teklif Al</a></li>
       </ul>
     </div>
 
