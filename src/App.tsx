@@ -10,6 +10,7 @@ import Nopage from './Pages/Nopage';
 import Product from './Pages/Product';
 import Footer from './components/Footer';
 import Getoffer from './Pages/Getoffer';
+import AboutUs from './Pages/AboutUs';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/products" element={< Product/>} />
       <Route path='/getoffer' element={<Getoffer/>}></Route>
+      <Route path='/aboutus' element={<AboutUs/>}></Route>
       <Route path="*" element={<Nopage />} />
       
     </Routes>

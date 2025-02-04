@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Menu Items */}
-        <div className="hidden md:flex">
+        <div className="hidden md:flex z-10">
           {["Ana Sayfa", "Hakkımızda", "Hizmetlerimiz", "Ürünler", "İletişim"].map((page, index) => (
             <Button key={index} text={page} onClick={() => {}} />
           ))}

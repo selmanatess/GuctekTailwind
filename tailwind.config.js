@@ -7,6 +7,10 @@ export default withMT({
   ],
   theme:{
     extend: {
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif", "antialiased"],
+        calligraffitti: ["Calligraffitti", "cursive"], 
+      },
       aspectRatio: {
         '4/3': '4 / 3',
       },
