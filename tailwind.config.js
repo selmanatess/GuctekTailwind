@@ -8,7 +8,8 @@ export default withMT({
   theme:{
     extend: {
       fontFamily: {
-        sans: ["Open Sans", "sans-serif", "antialiased"],
+        poppins: ["Poppins", "sans-serif"],
+        sans: ["Open Sans", "sans-serif", ],
         calligraffitti: ["Calligraffitti", "cursive"], 
       },
       aspectRatio: {

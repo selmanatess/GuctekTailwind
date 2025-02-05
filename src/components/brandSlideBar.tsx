@@ -67,7 +67,7 @@ export default function BrandSlideBar() {
 
   return (
     <div className="w-full overflow-hidden ">
-      <h1 className="text-start w-full my-2  ml-3 md:ml-6 text-xl font-bold text-orange-600">
+      <h1 className="text-start w-full text-xl font-bold text-orange-600 mt-6 mb-3">
         Hizmet Verilen Markalar
       </h1>
       <div className="relative w-full mx-auto  ">

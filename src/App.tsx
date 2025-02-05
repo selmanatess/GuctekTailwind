@@ -16,8 +16,9 @@ import AboutUs from './Pages/AboutUs';
 
 function App() {
   return (<>
-  <Navbar/>
+  
   <BrowserRouter>
+  <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
@@ -28,8 +29,9 @@ function App() {
       <Route path="*" element={<Nopage />} />
       
     </Routes>
+     <Footer/>
   </BrowserRouter>
-  <Footer/>
+ 
   </>
   
  

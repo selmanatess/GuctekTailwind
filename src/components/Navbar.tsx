@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
 import Button from "./Navbutton";
+import { useNavigate } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +14,8 @@ const Navbar: React.FC = () => {
   const [showServices, setShowServices] = useState(false);
   const [showProduct, setShowProduct] = useState(false);
   const [showContact, setShowContact] = useState(false);
-
+  const routes = ["/", "/aboutus", "/services", "/product", "/contact"] as string[];
+  const navigate = useNavigate();
   return (
     <nav className="bg-blue-700 p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -29,7 +31,9 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu Items */}
         <div className="hidden md:flex z-10">
           {["Ana Sayfa", "Hakkımızda", "Hizmetlerimiz", "Ürünler", "İletişim"].map((page, index) => (
-            <Button key={index} text={page} onClick={() => {}} />
+            <Button key={index} text={page} onClick={() => navigate(routes[index])
+
+            } />
           ))}
         </div>
 
@@ -66,14 +70,14 @@ const Navbar: React.FC = () => {
         } bg-transparent`}
       >
         <a
-          href="#"
+          href="" onClick={() => {setShowAboutUs(false); setShowServices(false); setShowProduct(false); setShowContact(false); navigate(routes[0])}}
           className="block text-2xl text-white hover:text-gray-300 p-2 border-b border-gray-300 w-full text-center hover:bg-orange-300 hover:rounded-md"
         >
           Ana Sayfa
         </a>
 
         <div
-          onClick={() => setShowAboutUs(!showAboutUs)}
+          onClick={() => {setShowAboutUs(!showAboutUs); navigate(routes[1])}} 
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -91,7 +95,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div
-          onClick={() => setShowServices(!showServices)}
+          onClick={()=>{setShowServices(!showServices); navigate(routes[2])} }
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -109,7 +113,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div
-          onClick={() => setShowProduct(!showProduct)}
+          onClick={() => {setShowProduct(!showProduct); navigate(routes[3])}}
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -127,7 +131,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div
-          onClick={() => setShowContact(!showContact)}
+          onClick={() => {setShowContact(!showContact); navigate(routes[4])}}
           className="flex flex-col  w-full text-center text-white cursor-pointer"
         >
           <a
