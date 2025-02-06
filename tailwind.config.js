@@ -7,6 +7,9 @@ export default withMT({
   ],
   theme:{
     extend: {
+      screens: {
+        'navmd': '970px',
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         sans: ["Open Sans", "sans-serif", ],

@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Menu Items */}
-        <div className="hidden md:flex z-10">
+        <div className="hidden navmd:flex z-10">
           {["Ana Sayfa", "Hakkımızda", "Hizmetlerimiz", "Ürünler", "İletişim"].map((page, index) => (
             <Button key={index} text={page} onClick={() => navigate(routes[index])
 
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="lg:hidden flex items-center">
+        <div className="navmd:hidden flex items-center">
           <button
             onClick={toggleMobileMenu}
             className="text-white focus:outline-none"
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${
+        className={`navmd:hidden ${
           isMobileMenuOpen
             ? "flex flex-col items-center justify-center"
             : "hidden"
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
       >
         <a
           href="" onClick={() => {setShowAboutUs(false); setShowServices(false); setShowProduct(false); setShowContact(false); navigate(routes[0])}}
-          className="block text-2xl text-white hover:text-gray-300 p-2 border-b border-gray-300 w-full text-center hover:bg-orange-300 hover:rounded-md"
+          className="block text-xl text-white hover:text-gray-300 p-2 border-b border-gray-300 w-full text-center hover:bg-orange-300 hover:rounded-md"
         >
           Ana Sayfa
         </a>
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
         >
           <a
             href="#services"
-            className="block text-2xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
+            className="block text-xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
           >
             Kurumsal
           </a>
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
         >
           <a
             href="#services"
-            className="block text-2xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
+            className="block text-xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
           >
             Hizmetlerimiz
           </a>
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
         >
           <a
             href="#products"
-            className="block text-2xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
+            className="block text-xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
           >
             Ürünler
           </a>
@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
         >
           <a
             href="#contact"
-            className="block text-2xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
+            className="block text-xl text-white hover:text-gray-300 p-2 text-center  hover:bg-orange-300 hover:rounded-md"
           >
             İletişim
           </a>
