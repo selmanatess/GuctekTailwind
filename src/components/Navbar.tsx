@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   const [showServices, setShowServices] = useState(false);
   const [showProduct, setShowProduct] = useState(false);
   const [showContact, setShowContact] = useState(false);
-  const routes = ["/", "/aboutus", "/services", "/product", "/contact"] as string[];
+  const routes = ["/", "/aboutus", "/services", "/products", "/contact"] as string[];
   const navigate = useNavigate();
   return (
     <nav className="bg-blue-700 p-4">
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
         </a>
 
         <div
-          onClick={() => {setShowAboutUs(!showAboutUs); navigate(routes[1])}} 
+          onClick={() => {setShowAboutUs(!showAboutUs); navigate(routes[1]);toggleMobileMenu();}} 
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div
-          onClick={()=>{setShowServices(!showServices); navigate(routes[2])} }
+          onClick={()=>{setShowServices(!showServices);} }
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -106,14 +106,14 @@ const Navbar: React.FC = () => {
           </a>
           {showServices && (
             <div className="transition-opacity duration-500 ease-in-out opacity-100">
-              <div className="py-1">Detay 1</div>
+              <div className="py-1" onClick={() => {navigate("getoffer");toggleMobileMenu();}}>Teklif Al</div>
               <div className="py-1">Detay 2</div>
             </div>
           )}
         </div>
 
         <div
-          onClick={() => {setShowProduct(!showProduct); navigate(routes[3])}}
+          onClick={() => {setShowProduct(!showProduct); navigate(routes[3]);} }
           className="flex flex-col border-b border-gray-300 w-full text-center text-white cursor-pointer"
         >
           <a
@@ -124,14 +124,16 @@ const Navbar: React.FC = () => {
           </a>
           {showProduct && (
             <div className="transition-opacity duration-500 ease-in-out opacity-100">
-              <div className="py-1">Pim</div>
-              <div className="py-1">Burç</div>
+              <div onClick={()=>{toggleMobileMenu();}} className="py-1">Pim</div>
+              <div onClick={()=>{toggleMobileMenu();}} className="py-1">Burç</div>
+              <div onClick={()=>{toggleMobileMenu();}} className="py-1">Mil</div>
+              <div onClick={()=>{toggleMobileMenu();}}  className="py-1">Boru</div>
             </div>
           )}
         </div>
 
         <div
-          onClick={() => {setShowContact(!showContact); navigate(routes[4])}}
+          onClick={() => {setShowContact(!showContact); navigate(routes[4]); toggleMobileMenu()} }
           className="flex flex-col  w-full text-center text-white cursor-pointer"
         >
           <a

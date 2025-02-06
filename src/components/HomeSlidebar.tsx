@@ -39,7 +39,7 @@ export default function HomeSlidebar() {
 
   return (
     <div className="w-full flex flex-col items-center relative">
-      <div className="relative w-full md:h-[600px] h-[300px] overflow-hidden">
+      <div className="relative w-full md:h-[600px] h-[220px] overflow-hidden">
         {/* Geçiş Animasyonu */}
         <div
           className={`w-full h-full flex transition-transform duration-700 ease-in-out ${

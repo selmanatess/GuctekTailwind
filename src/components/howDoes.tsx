@@ -8,7 +8,7 @@ export default function HowDoes() {
       </h1>
       <div className="flex flex-col md:flex-row flex-wrap justify-between items-center">
         <div className="w-full md:w-1/3 p-4  flex items-center justify-center">
-          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 transition-transform duration-300 hover:scale-110">
+          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 md:transition-transform duration-300 md:hover:scale-110 ">
             <div className="w-2/3 text-center text-7xl h-full text-orange-400 m-3">
               1
             </div>
@@ -18,7 +18,7 @@ export default function HowDoes() {
           </div>
         </div>
         <div className="w-full md:w-1/3 p-4  flex items-center justify-center ">
-          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 transition-transform duration-300 hover:scale-110">
+          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 md:transition-transform duration-300 md:hover:scale-110 ">
             <div className="w-2/3 text-center text-7xl h-full text-orange-400 m-3">
               2
             </div>
@@ -28,7 +28,7 @@ export default function HowDoes() {
           </div>
         </div>
         <div className="w-full md:w-1/3 p-4  flex items-center justify-center">
-          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 transition-transform duration-300 hover:scale-110">
+          <div className=" border border-5 border-orange-400 rounded-xl shadow-2xl flex flex-row items-center justify-around min-h-40 md:transition-transform duration-300 md:hover:scale-110 ">
             <div className="w-2/3 text-center text-7xl h-full text-orange-400 m-3">
               3
             </div>
